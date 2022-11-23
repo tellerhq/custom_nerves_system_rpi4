@@ -42,7 +42,7 @@ defmodule NervesSystemRpi4.MixProject do
     [
       type: :system,
       artifact_sites: [
-        {:github_api, "#{@github_organization}/telnet_system_rpi4", username: System.get_env("GITHUB_USER"), token: System.get_env("GITHUB_TOKEN"), tag: "v#{@version}"}
+        {:github_releases, "#{@github_organization}/#{@app}"}
       ],
       build_runner_opts: build_runner_opts(),
       platform: Nerves.System.BR,
