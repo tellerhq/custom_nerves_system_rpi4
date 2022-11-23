@@ -1,9 +1,9 @@
 defmodule NervesSystemRpi4.MixProject do
   use Mix.Project
 
-  @github_organization "nerves-project"
-  @app :nerves_system_rpi4
-  @source_url "https://github.com/#{@github_organization}/#{@app}"
+  @github_organization "tellerhq"
+  @app :custom_nerves_system_rpi4
+  @source_url "https://github.com/tellerhq/custom_rpi4_nerves"
   @version Path.join(__DIR__, "VERSION")
            |> File.read!()
            |> String.trim()
